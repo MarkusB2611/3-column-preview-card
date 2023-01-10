@@ -20,10 +20,12 @@ const DATA = [
 
 function App() {
   return (
-    <main className="flex flex-col justify-center items-center p-6 text-white font-LexendDeca text-base">
-      {DATA.map((car) => (
-        <CarInformation key={car.name} car={car} />
-      ))}
+    <main>
+      <div className="flex flex-col sm:flex-row justify-center items-center p-6 text-white font-LexendDeca text-base sm:h-screen">
+        {DATA.map((car) => (
+          <CarInformation key={car.name} car={car} />
+        ))}
+      </div>
     </main>
   );
 }
