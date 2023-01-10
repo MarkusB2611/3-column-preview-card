@@ -6,7 +6,7 @@ const CarInformation = ({ car }: CarInformationProps) => {
     >
       <div className="mb-9">
         <img
-          src={`/public/images/icon-${car.name}.svg`}
+          src={`/images/icon-${car.name.toLowerCase()}.svg`}
           alt={`Icon of the ${car.name} car class`}
         />
       </div>
